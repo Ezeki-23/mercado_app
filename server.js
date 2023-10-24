@@ -34,8 +34,8 @@ app.post("/create_preference", (req, res) => {
 			}
 		],
 		back_urls: {
-			"success": "https://ecommer-app.vercel.app/cart",
-			"failure": "https://ecommer-app.vercel.app/cart",
+			"success": "https://ecommer-app.vercel.app",
+			"failure": "https://ecommer-app.vercel.app",
 			"pending": ""
 		},
 		auto_return: "approved",
