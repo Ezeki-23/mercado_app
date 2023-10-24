@@ -2,9 +2,10 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mercadopago = require("mercadopago");
+require('dotenv').config();
 
 mercadopago.configure({
-	access_token: "TEST-2089730705150239-101922-7119336a8560d6f73044cabfb5dbfdc3-1515647047",
+	access_token: process.env.SECRET_TOKEN,
 });
 
 app.use(function (req, res, next) {
